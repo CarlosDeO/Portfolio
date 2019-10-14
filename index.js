@@ -16,7 +16,6 @@ function handleNav() {
     });
 
     function highlightLink(anchor) {
-        console.log(anchor);
         if (anchor !== highlighed) {
             highlighed = anchor
         }
@@ -28,7 +27,6 @@ function handleNav() {
     }
 
     $(window).on('scroll', function () {
-        console.log('run');
         var pos = $(window).scrollTop();
         var pos2 = pos + 50;
         var scrollBottom = pos + $(window).height();
@@ -65,7 +63,6 @@ function contactForm() {
             data: { message: $('form').serialize() },
             dataType: "json"
         }).done(function (response) {
-            console.log("submit")
             $('#success').addClass('expand');
             $('#contact-form').find("input[type=text], input[type=email], textarea").val("");
         });
