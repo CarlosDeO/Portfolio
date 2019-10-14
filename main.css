@@ -10,13 +10,13 @@ body {
 }
 
 #home {
-    /* background: url('https://static.kent.ac.uk/nexus/ems/477.jpg') no-repeat center center fixed;  */
-    background: url('https://www.wallpaperflare.com/static/872/157/141/mountains-asus-zenfone-stock-hd-wallpaper.jpg');
+    background:  linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ), url('https://www.wallpaperflare.com/static/872/157/141/mountains-asus-zenfone-stock-hd-wallpaper.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     background-position: bottom;
-    /* background-position: fixed; */
 }
 
 .home {
