@@ -7,21 +7,13 @@ function handleNav() {
         isMobile = true;
     }
 
-    
-
     var navPos = $('nav').position().top;
     var lastPos = 0;
     var lockTimer
 
-    // clearTimeout(lockTimer);
-    // if (!$('body').hasClass('disable-hover')) {
-    //     $('body').addClass('disable-hover')
-    // }
-
-    // lockTimer = setTimeout(function () {
-    //     $('body').removeClass('disable-hover')
-    // }, 500);
-
+    $('.menu').click(function () {
+        $('.link-wrap').toggleClass('visible');
+    });
 
     function highlightLink(anchor) {
         console.log(anchor);
@@ -50,13 +42,13 @@ function handleNav() {
             }
             lastPos = pos;
         }
-        if (pos2 > $('#home').offset().top) { highlightLink('home'); }
-        if (pos2 > $('#about').offset().top) { highlightLink('about'); }
-        if (pos2 > $('#projects').offset().top) { highlightLink('projects'); }
         if (pos2 > $('#contact').offset().top ||
             pos + $(window).height() === $(document).height()) {
             highlightLink('contact');
         }
+        else if (pos2 > $('#projects').offset().top) { highlightLink('projects'); }
+        else if (pos2 > $('#about').offset().top) { highlightLink('about'); }
+        else if (pos2 > $('#home').offset().top) { highlightLink('home'); }
     })
 }
 

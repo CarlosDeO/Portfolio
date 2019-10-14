@@ -14,14 +14,18 @@ body {
     background: url('https://www.wallpaperflare.com/static/872/157/141/mountains-asus-zenfone-stock-hd-wallpaper.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    /* background-attachment: fixed; */
+    background-position: bottom;
     /* background-position: fixed; */
 }
 
 .home {
     padding: 0 10px;
     height: calc(100vh + 53px);
+}
+
+.intro-container {
+    margin-bottom: 200px;
 }
 
 .introText {
@@ -33,10 +37,6 @@ body {
 .highlight {
     color: #E31B6D;
 }
-
-.disable-hover {
-    pointer-events: none;
-  }
 
 .flex {
     display: flex;
@@ -76,11 +76,15 @@ body {
     transition: transform .3s;
 }
 
-/* .mdi-arrow-right:before {
-    content: "\F054";
-} */
+.menu {
+    display: none;
+}
 
-/* Nav style  */
+nav .link-wrap.visible {
+    height: 200px;
+}
+
+/* NAV */
 
 nav {
     color: #fff;
@@ -103,7 +107,7 @@ nav.fixed {
 }
 
 .link-wrap {
-
+    padding: 0px;
     list-style-type: none;
     position: initial;
     background: none;
@@ -138,11 +142,12 @@ nav.fixed {
     color: #E31B6D !important;
 }
 
-/* ABOUT*/
+/* ABOUT */
 
 .s2 {
     background-color: #f5f5f5;
 }
+
 section {
     padding: 100px 0 130px 0;
 }
@@ -153,7 +158,6 @@ section {
     font-family: 'Raleway';
     font-weight: bold;
     color: #444649;
-    /* position: relative; */
 }
 
 .header-bar {
@@ -162,7 +166,9 @@ section {
     height: 4px;
     background: #444649;
 }
-
+.label {
+    font-size: 25px
+}
 .about-container {
     width: 100%;
     display: flex;
@@ -170,11 +176,38 @@ section {
     justify-content: center;
 }
 
-.me {
-    height: 200px;
+.about-section {
+    padding: 0 50px 0 50px;
+    width: 50%;
 }
 
-/* Portfolio style  */
+.skills-section {
+    padding: 0 50px 0 50px;
+    width: 50%;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill {
+    flex: 1 0 21%;
+    margin: 5px;
+    height: 100px;
+}
+
+.about-text {
+    line-height: 16pt;
+    padding: 0px 20px 0px 20px;
+    margin: 0 auto;
+}
+
+.me {
+    height: 300px;
+}
+
+/* PORTFOLIO */
 
 section:nth-of-type(3) {
     background: white;
@@ -277,7 +310,7 @@ section:nth-of-type(3) {
     margin: 1em 1em 4em 1em;
     max-width: 800px;
     -webkit-box-orient: vertical;
-    border: 1px solid #eee;
+    border: 2px solid #eee;
 }
 
 .img-container {
@@ -329,7 +362,7 @@ section:nth-of-type(3) {
 .card-title {
     margin: 0;
     color: #01213b;
-    font-size: 1.6em;
+    font-size: 2em;
     font-family: 'Quattrocento', serif;
 }
 
@@ -341,12 +374,33 @@ section:nth-of-type(3) {
     margin-right: 1em;
 }
 
+.project-links a {
+    text-decoration: none;
+}
+
 .tech-icon {
     color: #4b4b4b;
     height: 1.3em;
 }
 
-/* Contact style  */
+.tech-list {
+    padding: 0px;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+}
+
+.tech-list li {
+    margin: 0 5px 0 5px;
+    display: inline;
+}
+
+hr {
+    margin: 2px;
+    display: inline;
+}
+
+/* CONTACT  */
 
 section:nth-of-type(4) {
     background: #252934;
@@ -374,9 +428,6 @@ section:nth-of-type(4) p {
     font-size: 12pt;
 }
 
-form {
-    min-width: 500px;
-}
 
 textarea {
     min-height: 150px;
@@ -506,5 +557,62 @@ footer {
 @media screen and (max-width: 600px) {
     .introText {
         font-size: 16pt;
+    }
+
+    .menu {
+        height: 20px;
+        display: block;
+        position: absolute;
+        right: 5vw;
+        margin: auto 0;
+        line-height: 36pt;
+    }
+
+    .menu:hover {
+        cursor: pointer;
+    }
+
+    .link-wrap {
+        max-width: 1200px;
+        width: 100%;
+        position: absolute;
+        top: 37px;
+        background: #333;
+        overflow: hidden;
+        height: 0;
+        transition: height .3s ease-out;
+    }
+
+    .page-link {
+        display: block;
+        padding: 12px 20px;
+    }
+
+    nav .link-wrap .page-link:first-child {
+        padding: 25px 20px 12px 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .project-links button {
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    form {
+        min-width: 500px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .about-container {
+        display: block;
+    }
+
+    .about-section,
+    .skills-section {
+        width: 100%;
+        padding: 0px;
     }
 }
