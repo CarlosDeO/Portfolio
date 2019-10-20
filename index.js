@@ -15,6 +15,7 @@ function handleNav() {
         $('.link-wrap').toggleClass('visible');
     });
 
+
     function highlightLink(anchor) {
         if (anchor !== highlighed) {
             highlighed = anchor
@@ -50,7 +51,9 @@ function handleNav() {
     })
 }
 
-
+function techList(){
+    $('.tech-list li').append("<hr />");
+}
 
 // CONTACT FORM
 function contactForm() {
@@ -75,6 +78,7 @@ function contactForm() {
 
 
 function handleApp() {
+    techList();
     handleNav();
     contactForm();
 }

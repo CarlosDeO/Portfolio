@@ -15,137 +15,264 @@
 </head>
 
 <body>
-
-    <section id="home" class="home flex s1">
-        <div class="flex intro-container">
-            <div class="introText">
-                Hello, I'm <span class="highlight">Carlos De Orta</span>.
-                <br>
-                I'm a full-stack web developer.
+    <main>
+        <section id="home" class="home flex s1">
+            <div class="flex intro-container">
+                <h1 class="introText">
+                    Hello, I'm <span class="highlight">Carlos De Orta</span>.
+                    <br>
+                    I'm a full-stack web developer.
+                </h1>
+                <button class="home-button" onclick="location.href='#about'">View my work <i
+                        class="material-icons mdi">arrow_forward</i></button>
+                <nav class="flex">
+                    <ul class="link-wrap">
+                        <li class="page-link active"><a href="#home">home</a></li>
+                        <li class="page-link"><a href="#about">about</a></li>
+                        <li class="page-link"><a href="#projects">portfolio</a></li>
+                        <li class="page-link"><a href="#contact">contact</a></li>
+                    </ul>
+                    <img class="menu" src="./images/round_menu_white_18dp.png" alt="">
+                </nav>
             </div>
-            <button class="home-button" onclick="location.href='#about'">View my work <i
-                    class="material-icons mdi">arrow_forward</i></button>
-            <nav class="flex">
-                <ul class="link-wrap">
-                    <li class="page-link active"><a href="#home">home</a></li>
-                    <li class="page-link"><a href="#about">about</a></li>
-                    <li class="page-link"><a href="#projects">portfolio</a></li>
-                    <li class="page-link"><a href="#contact">contact</a></li>
-                </ul>
-                <img class="menu" src="./images/round_menu_white_18dp.png" alt="">
-            </nav>
-        </div>
-    </section>
-    <section id="about" class="s2">
-        <div class="container flex">
-            <h2 class="header">ABOUT</h2>
-            <div class="header-bar"></div>
-            <div class="about-container">
-                <div class="about-section">
-                    <img src="./images/me.jpg" alt="picture of author" class="me">
-                    <h3 class="label">About me</h3>
-                    <p class="about-text">I'm a full-stack developer based in Los Angeles, California. I have a huge
-                            passion for building software while seeking out opportunities to learn new technologies that are meaningful and challenging to me. In my spear time I like to read, travel and skateboard. More then anything I
-                            love being a software developer. I enjoy what I do. That is whether it’s creating servers in Node, connecting to
-                            MongoDB databases or designing a unique user experience per device whilst still maintaining a
+        </section>
+
+        <section id="about" class="s2">
+            <div class="container flex">
+                <h2 class="header">ABOUT</h2>
+                <div class="header-bar"></div>
+                <div class="about-container">
+                    <div class="about-section">
+                        <img src="./images/me.jpg" alt="picture of author" class="me">
+                        <h3 class="label">About me</h3>
+                        <p class="about-text">I'm a full-stack developer based in Los Angeles, California. I have a huge
+                            passion for building software while seeking out opportunities to learn new technologies that
+                            are
+                            meaningful and challenging to me. In my spear time I like to read, travel and skateboard.
+                            More
+                            then anything I
+                            love being a software developer. I enjoy what I do. That is whether it’s creating servers in
+                            Node, connecting to
+                            MongoDB databases or designing a unique user experience per device whilst still maintaining
+                            a
                             consistent brand experience.</p>
-                </div>
-                <div class="skills-section">
-                    <h3 class="label">Skills</h3>
-                    <div class="skill-container">
-                        <div class="skill">
-                            <div class="tag bold flex">CSS</div>
-                            <img src="https://img.icons8.com/wired/64/000000/css3.png">
+                    </div>
+                    <div class="skills-section">
+                        <h3 class="label">Skills</h3>
+                        <div class="skill-container">
+                            <div class="skill">
+                                <p class="tag">CSS</p>
+                                <img src="https://img.icons8.com/wired/64/000000/css3.png" alt="css icon">
+                            </div>
+
+                            <div class="skill">
+                                <p class="tag">HTML</p>
+                                <img src="https://img.icons8.com/wired/64/000000/html-5.png" alt="html icon">
+                            </div>
+
+                            <div class="skill">
+                                <p class="tag">jQuery</p>
+                                <img src="https://img.icons8.com/ios/64/000000/jquery.png" alt="jquery icon">
+                            </div>
+
+                            <div class="skill">
+                                <p class="tag">JavaScript</p>
+                                <img src="https://img.icons8.com/ios/50/000000/javascript.png" alt="javascript icon">
+                            </div>
+
+                            <div class="skill">
+                                <p class="tag">Node.js</p>
+                                <img src="https://img.icons8.com/windows/64/000000/nodejs.png" alt="node icon">
+                            </div>
+
+                            <div class="skill">
+                                <p class="tag">MongoDb</p>
+                                <img src="https://img.icons8.com/wired/64/000000/add-database.png" alt="mongo icon">
+                            </div>
+
+                            <div class="skill">
+                                <p class="tag">React.js</p>
+                                <img src="https://img.icons8.com/wired/64/000000/react.png" alt="react icon">
+                            </div>
+
+                            <div class="skill">
+                                <p class="tag">React Context</p>
+                                <img src="https://img.icons8.com/wired/64/000000/active-directory.png"
+                                    alt="context icon">
+                            </div>
                         </div>
-
-                        <div class="skill">
-                            <div class="tag bold flex">HTML</div>
-                            <img src="https://img.icons8.com/wired/64/000000/html-5.png">
-                        </div>
-
-
-                        <div class="skill">
-                            <div class="tag bold flex">jQuery</div>
-                            <img src="https://img.icons8.com/ios/64/000000/jquery.png">
-                        </div>
-
-                        <div class="skill">
-                            <div class="tag bold flex">JavaScript</div>
-                            <img src="https://img.icons8.com/ios/50/000000/javascript.png">
-                        </div>
-
-                        <div class="skill">
-                            <div class="tag bold flex">Node.js</div>
-                            <img src="https://img.icons8.com/windows/64/000000/nodejs.png">
-                        </div>
-
-                        <div class="skill">
-                            <div class="tag bold flex">MongoDb</div>
-                            <img src="https://img.icons8.com/wired/64/000000/add-database.png">
-                        </div>
-
-                        <div class="skill">
-                            <div class="tag bold flex">React.js</div>
-                            <img src="https://img.icons8.com/wired/64/000000/react.png">
-                        </div>
-
-                        <div class="skill">
-                            <div class="tag bold flex">React Context</div>
-                            <img src="https://img.icons8.com/wired/64/000000/active-directory.png">
+                        <h3 class="label">Tools</h3>
+                        <div class="tools-container">
+                            <div class="tool">
+                                <p class="tag">Postman</p>
+                                <img class="postman"
+                                    src="https://dashboard.snapcraft.io/site_media/appmedia/2018/11/logo-mark.png"
+                                    alt="postman icon">
+                            </div>
+                            <div class="tool">
+                                <p class="tag">Git</p>
+                                <img src="https://img.icons8.com/ios/64/000000/git.png" alt="git icon">
+                            </div>
+                            <div class="tool">
+                                <p class="tag">Bootstrap</p>
+                                <img src="https://img.icons8.com/windows/64/000000/bootstrap.png" alt="bootstrap icon">
+                            </div>
+                            <div class="tool">
+                                <p class="tag">Robo 3T</p>
+                                <img src="https://img.icons8.com/pastel-glyph/64/000000/robot-2--v2.png"
+                                    alt="robo icon">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="projects">
-        <div class="container flex">
-            <h2 class="header">PROJECTS</h2>
-            <div class="header-bar"></div>
-            <div class="projects-wrap">
-                <div class="projects">
-                    <div id="project-1" class="project">
-                        <div class="card">
-                            <div class="img-container">
-                                <a href="https://github.com/CarlosDeO/Autofix" target="_blank">
-                                    <img class="card-img-top"
-                                        src="https://github.com/CarlosDeO/Autofix/raw/master/public/Images/Landing-Page.png"
-                                        alt="auto-fix.png">
-                                    <span class="view-project-hover">View project</span>
-                                </a>
-                            </div>
-                            <div class="card-block">
-                                <h3 class="card-title">AutoFix</h3>
-                                <div class="project-tech">
-                                    <ul class="tech-list">
-                                        <li>React</li>
-                                        <hr color='black' width=".9" size="20">
-                                        <li>Context</li>
-                                        <hr color='black' width=".9" size="20">
-                                        <li>Express</li>
-                                        <hr color='black' width=".9" size="20">
-                                        <li>Node</li>
-                                        <hr color='black' width=".9" size="20">
-                                        <li>MongoDB</li>
-                                    </ul>
+        </section>
+        <section id="projects">
+            <div class="container flex">
+                <h2 class="header">PROJECTS</h2>
+                <div class="header-bar"></div>
+                <div class="projects-wrap">
+                    <div class="projects">
+                        <div id="project-1" class="project">
+                            <div class="card">
+                                <div class="img-container">
+                                    <a href="https://github.com/CarlosDeO/Autofix" target="_blank">
+                                        <img class="card-img-top"
+                                            src="https://github.com/CarlosDeO/Autofix/raw/master/public/Images/Landing-Page.png"
+                                            alt="auto-fix.png">
+                                        <span class="view-project-hover">View project</span>
+                                    </a>
                                 </div>
-                                <p class="card-text">AutoFix is MERN full-stack application that is intended for
-                                    mechanics to
-                                    keep
-                                    a log of all of their client's cars. As well as the auto repairs that belong to
-                                    each
-                                    car.
-                                    AutoFix is also useful for those car enthusiasts who love to keep track of the
-                                    maintenance of their car.</p>
-                                <div class="card-footer">
-                                    <div class="project-links">
-                                        <a class="card-actions" href="https://github.com/CarlosDeO/Autofix"
-                                            target="_blank">
-                                            <button type="button" class="btn-light marg-clear-l">View code</button>
-                                        </a>
-                                        <a href="https://auto-fix.herokuapp.com" target="_blank">
-                                            <button type="button" class="btn-dark">View project</button>
-                                        </a>
+                                <div class="card-block">
+                                    <h3 class="card-title">AutoFix</h3>
+                                    <div class="project-tech">
+                                        <aside class="tech-list">
+                                            <p>React</p>
+                                            <hr>
+                                            <p>Context</p>
+                                            <hr>
+                                            <p>Express</p>
+                                            <hr>
+                                            <p>Node</p>
+                                            <hr>
+                                            <p>MongoDB</p>
+                                        </aside>
+                                    </div>
+                                    <p class="card-text">AutoFix is MERN full-stack application that is intended for
+                                        mechanics to
+                                        keep
+                                        a log of all of their client's cars. As well as the auto repairs that belong to
+                                        each
+                                        car.
+                                        AutoFix is also useful for those car enthusiasts who love to keep track of the
+                                        maintenance of their car.</p>
+                                    <div class="card-footer">
+                                        <div class="project-links">
+                                            <a class="card-actions" href="https://github.com/CarlosDeO/Autofix"
+                                                target="_blank">
+                                                <button type="button" class="btn-light marg-clear-l">View
+                                                    code</button></a>
+                                            <a href="https://auto-fix.herokuapp.com" target="_blank">
+                                                <button type="button" class="btn-dark">View project</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="project-2" class="project">
+                            <div class="card">
+                                <div class="img-container">
+                                    <a href="https://github.com/CarlosDeO/TripLogger" target="_blank">
+                                        <img class="card-img-top"
+                                            src="https://github.com/CarlosDeO/TripLogger/raw/master/public/Images/Loggin-Page.png"
+                                            alt="TripLogger.png">
+                                        <span class="view-project-hover">View project</span>
+                                    </a>
+                                </div>
+                                <div class="card-block">
+                                    <h3 class="card-title">TripLogger</h3>
+                                    <div class="project-tech">
+                                        <aside class="tech-list">
+                                            <p>Node</p>
+                                            <hr>
+                                            <p>MongoDB</p>
+                                            <hr>
+                                            <p>Mocha</p>
+                                            <hr>
+                                            <p>Chai</p>
+                                            <hr>
+                                            <p>HTML</p>
+                                            <hr>
+                                            <p>CSS</p>
+                                        </aside>
+                                    </div>
+                                    <p class="card-text">I love to travel, but one of my least favorite aspects of
+                                        traveling
+                                        is
+                                        keeping track of all my trip information. Such as the hotel, flight and car
+                                        rental
+                                        information. Trip Logger is a useful application that allows the user to store,
+                                        edit
+                                        and
+                                        delete trip information. <br>
+                                        No more needing to check various emails.</p>
+                                    <div class="card-footer">
+                                        <div class="project-links">
+                                            <a class="card-actions" href="https://github.com/CarlosDeO/TripLogger"
+                                                target="_blank">
+                                                <button type="button" class="btn-light marg-clear-l">View
+                                                    code</button></a>
+
+                                            <a href="https://protected-basin-48207.herokuapp.com/index.html"
+                                                target="_blank">
+                                                <button type="button" class="btn-dark">View project</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="project-3" class="project">
+                            <div class="card">
+                                <div class="img-container">
+                                    <a href="https://github.com/CarlosDeO/Lyric-Tunes" target="_blank">
+                                        <img class="card-img-top"
+                                            src="https://github.com/CarlosDeO/Lyric-Tunes/raw/master/ScreenShots/ResultPage.png"
+                                            alt="lyric-tunes.png">
+                                        <span class="view-project-hover">View project</span>
+                                    </a>
+                                </div>
+                                <div class="card-block">
+                                    <h3 class="card-title">Lyric-Tunes</h3>
+                                    <div class="project-tech">
+                                        <aside class="tech-list">
+                                            <p>HTML</p>
+                                            <hr>
+                                            <p>CSS</p>
+                                            <hr>
+                                            <p>JavaScript</p>
+                                            <hr>
+                                            <p>jQuery</p>
+                                            <hr>
+                                            <p>Ajax</p>
+                                        </aside>
+                                    </div>
+                                    <p class="card-text">Lyric-Tunes allows users to search for any specific artist and
+                                        get
+                                        a
+                                        list
+                                        of their top songs.
+                                        The user may request to see the lyrics for any chosen song.</p>
+                                    <div class="card-footer">
+                                        <div class="project-links">
+                                            <a class="card-actions" href="https://github.com/CarlosDeO/Lyric-Tunes"
+                                                target="_blank">
+                                                <button type="button" class="btn-light marg-clear-l">View
+                                                    code</button></a>
+                                            <a href="https://carlosdeo.github.io/Lyric-Tunes/" target="_blank">
+                                                <button type="button" class="btn-dark">
+                                                    View project</button></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -153,135 +280,46 @@
                     </div>
                 </div>
             </div>
-
-            <div id="project-2" class="project">
-                <div class="card">
-                    <div class="img-container">
-                        <a href="https://github.com/CarlosDeO/TripLogger" target="_blank">
-                            <img class="card-img-top"
-                                src="https://github.com/CarlosDeO/TripLogger/raw/master/public/Images/Loggin-Page.png"
-                                alt="TripLogger.png">
-                            <span class="view-project-hover">View project</span>
-                        </a>
+        </section>
+        <section id="contact" class="flex">
+            <div class="container flex">
+                <h2 class="header">CONTACT</h2>
+                <div class="header-bar"></div>
+                <p>Have a question or want to work together?</p>
+                <form id="contact-form">
+                    <input class="form-input" placeholder="Name" type="text" name="name" required>
+                    <input class="form-input" placeholder="Enter email" type="email" name="email" required>
+                    <textarea placeholder="Your Message" name="message"></textarea>
+                    <div id="success">
+                        <div>Your message was sent successfully. Thank you.<i id="close"
+                                class="material-icons close mdi">close</i></div>
                     </div>
-                    <div class="card-block">
-                        <h3 class="card-title">TripLogger</h3>
-                        <div class="project-tech">
-                            <ul class="tech-list">
-                                <li>Node</li>
-                                <hr color='black' width=".9" size="20">
-                                <li>MongoDB</li>
-                                <hr color='black' width=".9" size="20">
-                                <li>Mocha</li>
-                                <hr color='black' width=".9" size="20">
-                                <li>Chai</li>
-                                <hr color='black' width=".9" size="20">
-                                <li>HTML</li>
-                                <hr color='black' width=".9" size="20">
-                                <li>CSS</li>
-                            </ul>
-                        </div>
-                        <p class="card-text">I love to travel, but one of my least favorite aspects of traveling is
-                            keeping track of all my trip information. Such as the hotel, flight and car rental
-                            information. Trip Logger is a useful application that allows the user to store, edit and
-                            delete trip information. <br>
-                            No more needing to check various emails.</p>
-                        <div class="card-footer">
-                            <div class="project-links">
-                                <a class="card-actions" href="https://github.com/CarlosDeO/TripLogger" target="_blank">
-                                    <button type="button" class="btn-light marg-clear-l">View code</button>
-                                </a>
-                                <a href="https://protected-basin-48207.herokuapp.com/index.html" target="_blank">
-                                    <button type="button" class="btn-dark">View project</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <button class="submit-button" type="submit" id="submit">SUBMIT</button>
+                </form>
             </div>
-            <div id="project-3" class="project">
-                <div class="card">
-                    <div class="img-container">
-                        <a href="https://github.com/CarlosDeO/Lyric-Tunes" target="_blank">
-                            <img class="card-img-top"
-                                src="https://github.com/CarlosDeO/Lyric-Tunes/raw/master/ScreenShots/ResultPage.png"
-                                alt="lyric-tunes.png">
-                            <span class="view-project-hover">View project</span>
-                        </a>
+        </section>
+        <footer>
+            <address class="icon-wrap">
+                <a href="https://www.linkedin.com/in/carlos-de-orta-986b1b13b?trk=people-guest_profile-result-card_result-card_full-click"
+                    target="_blank">
+                    <div class="icon">
+                        <img src="./images/linkedin.png" alt="linkedin icon">
                     </div>
-                    <div class="card-block">
-                        <h3 class="card-title">Lyric-Tunes</h3>
-                        <div class="project-tech">
-                            <ul class="tech-list">
-                                <li>HTML</li>
-                                <hr color='black' width=".9" size="20">
-                                <li>CSS</li>
-                                <hr color='black' width=".9" size="20">
-                                <li>JavaScript</li>
-                                <hr color='black' width=".9" size="20">
-                                <li>jQuery</li>
-                                <hr color='black' width=".9" size="20">
-                                <li>Ajax</li>
-                            </ul>
-                        </div>
-                        <p class="card-text">Lyric-Tunes allows users to search for any specific artist and get a
-                            list
-                            of their top songs.
-                            The user may request to see the lyrics for any chosen song.</p>
-                        <div class="card-footer">
-                            <div class="project-links">
-                                <a class="card-actions" href="https://github.com/CarlosDeO/Lyric-Tunes" target="_blank">
-                                    <button type="button" class="btn-light marg-clear-l">View code</button>
-                                </a>
-                                <a href="https://carlosdeo.github.io/Lyric-Tunes/" target="_blank">
-                                    <button type="button" class="btn-dark">View project</button>
-                                </a>
-                            </div>
-                        </div>
+                </a>
+                <a href="https://github.com/CarlosDeO" target="_blank">
+                    <div class="icon">
+                        <img src="./images/github-logo.png" alt="github icon">
                     </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <section id="contact" class="flex">
-        <div class="container flex">
-            <h2 class="header">CONTACT</h2>
-            <div class="header-bar"></div>
-            <p>Have a question or want to work together?</p>
-            <form id="contact-form">
-                <input class="name-input" placeholder="Name" type="text" name="name" required>
-                <input placeholder="Enter email" type="email" name="email" required>
-                <textarea placeholder="Your Message" type="text" name="message"></textarea>
-                <div id="success">
-                    <div>Your message was sent successfully. Thanks you.<i id="close"
-                            class="material-icons close mdi">close</i></span></div>
-                </div>
-                <button class="submit-button" type="submit" id="submit">SUBMIT</button>
-            </form>
-        </div>
-    </section>
-    <footer>
-        <div class="icon-wrap">
-            <a href="https://www.linkedin.com/in/carlos-de-orta-986b1b13b?trk=people-guest_profile-result-card_result-card_full-click" target="_blank">
-                <div class="icon">
-                    <img src="./images/linkedin.png">
-                </div>
-            </a>
-            <a href="https://github.com/CarlosDeO" target="_blank">
-                <div class="icon">
-                    <img src="./images/github-logo.png">
-                </div>
-            </a>
-            <a href="mailto:deortacarlos@icloud.com?subject=Work inquiry">
-                <div class="icon">
-                    <img src="./images/email.png">
-                </div>
-            </a>
-        </div>
-        <p class="footer-note">CARLOS DE ORTA <span class="highlight">&copy;2019</span></p>
-    </footer>
-
+                </a>
+                <a href="mailto:deortacarlos@icloud.com?subject=Work_inquiry">
+                    <div class="icon">
+                        <img src="./images/email.png" alt="email icon">
+                    </div>
+                </a>
+            </address>
+            <p class="footer-note">CARLOS DE ORTA <span class="highlight">&copy;2019</span></p>
+        </footer>
+    </main>
 </body>
 
 </html>
