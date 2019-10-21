@@ -285,38 +285,42 @@ section:nth-of-type(3) {
     flex: 1 1 auto;
 }
 
-.btn-dark {
+.button-dark {
+    width: 116px;
+    height: 22px;
     font-family: 'Lato', sans-serif;
     color: #ffffff;
     font-size: 19px;
     background: #01213b;
-    padding: 5px 16px;
+    padding: 3px 7px 3px 7px;
     text-decoration: none;
     border: none;
-    min-width: 134px;
     border: 2px solid #01213b;
 }
 
-.btn-dark:hover {
+.button-light {
+    width: 116px;
+    height: 22px;
+    font-family: 'Lato', sans-serif;
+    color: #01213b;
+    font-size: 19px;
+    background: #ffffff;
+    padding: 3px 7px 3px 7px;
+    text-decoration: none;
+    border: none;
+    margin-left: 10px;
+    border: 2px solid #01213b;
+}
+
+
+.button-dark:hover {
     cursor: pointer;
     background-color: #063B67;
     border: 2px solid #063B67;
 }
 
-.btn-light {
-    font-family: 'Lato', sans-serif;
-    color: #01213b;
-    font-size: 19px;
-    background: #ffffff;
-    padding: 5px 16px;
-    text-decoration: none;
-    border: none;
-    min-width: 134px;
-    margin-left: 10px;
-    border: 2px solid #01213b;
-}
 
-.btn-light:hover {
+.button-light:hover {
     cursor: pointer;
     color: #ffffff;
     background-color: #063B67;
@@ -389,7 +393,8 @@ section:nth-of-type(3) {
 }
 
 .card-actions {
-    margin-right: 5px;
+    display: inline-block;
+    margin: 5px;
 }
 
 .project-links a {
@@ -619,11 +624,6 @@ footer {
 
     .project-links button {
         margin: 5px;
-    }
-
-    .btn-dark,
-    .btn-light {
-        padding: 3px 7px 3px 7px;
     }
 
     .tech-list {
