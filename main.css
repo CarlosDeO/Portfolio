@@ -630,11 +630,17 @@ footer {
         display: block;
     }
 }
-
+@media screen and (max-width: 300px) {
+    .me {
+        height: 90%;
+        width: 90%;
+    }
+}
 @media screen and (min-width: 600px) {
     form {
         min-width: 500px;
     }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -648,3 +654,9 @@ footer {
         padding: 0px;
     }
 }
+
+@media only screen and (orientation: landscape) {
+    .introText {
+        margin-top: 120px;
+    }
+  }
